@@ -22,9 +22,10 @@ import { ResumeEducationComponent } from './resume/resume-education/resume-educa
       { path: '', component: ProductListComponent },
        { path: 'products/:productId', component: ProductDetailsComponent },
        { path: 'resume', component: ResumeComponent },
-        { path: 'resume-left.cloumn', component:  ResumeLeftColumnComponent },
-      { path: 'resume-right.cloumn', component:  ResumeRightColumnComponent },
+        { path: 'left.cloumn', component:  ResumeLeftColumnComponent },
+      { path: 'right.cloumn', component:  ResumeRightColumnComponent },
       { path: 'resume-education', component:  ResumeEducationComponent },
+      { path: 'footer', component:  FooterComponent },
     ])
   ],
   declarations: [
