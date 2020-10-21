@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './resume-left.component.html',
   styleUrls: ['./resume-left.component.css']
 })
-export class ResumeLeftColumnComponent implements OnInit {
+export class ResumeLeftComponent implements OnInit {
 
   constructor() { }
 
