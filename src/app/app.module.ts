@@ -9,8 +9,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ResumeLeftColumnComponent } from './left/left.component';
-import { ResumeRightColumnComponent } from './right/right.component';
+import { ResumeLeftComponent } from './resume/resume-left/resume-left.component';
+import { ResumeRightComponent } from './resume/resume-right/resume-right.component';
 import { FooterComponent } from './resume/footer/footer.component';
 import { ResumeEducationComponent } from './resume/resume-education/resume-education.component';
 
@@ -22,8 +22,8 @@ import { ResumeEducationComponent } from './resume/resume-education/resume-educa
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'resume', component: ResumeComponent },
-      { path: 'left.cloumn', component:  ResumeLeftColumnComponent },
-      { path: 'right.cloumn', component:  ResumeRightColumnComponent },
+      { path: 'left.cloumn', component:  ResumeLeftComponent },
+      { path: 'right.cloumn', component:  ResumeRightComponent },
       { path: 'resume-education', component:  ResumeEducationComponent },
       { path: 'footer', component:  FooterComponent },
     ])
@@ -35,8 +35,8 @@ import { ResumeEducationComponent } from './resume/resume-education/resume-educa
     ProductAlertsComponent,
     ResumeComponent,
     ProductDetailsComponent,
-    ResumeLeftColumnComponent,
-    ResumeRightColumnComponent,
+    ResumeLeftComponent,
+    ResumeRightComponent,
     FooterComponent,
     ResumeEducationComponent,
   ],
