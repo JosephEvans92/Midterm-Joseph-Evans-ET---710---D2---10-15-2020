@@ -13,6 +13,8 @@ import { ResumeLeftComponent } from './resume/resume-left/resume-left.component'
 import { ResumeRightComponent } from './resume/resume-right/resume-right.component';
 import { FooterComponent } from './resume/footer/footer.component';
 import { ResumeEducationComponent } from './resume/resume-education/resume-education.component';
+import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profile.component';
+import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
 
 @NgModule({
   imports: [
@@ -39,6 +41,8 @@ import { ResumeEducationComponent } from './resume/resume-education/resume-educa
     ResumeRightComponent,
     FooterComponent,
     ResumeEducationComponent,
+    ResumeProfileComponent,
+    ResumeWorkExperienceComponent,
   ],
   bootstrap: [ AppComponent ]
 })
