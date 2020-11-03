@@ -13,6 +13,7 @@ import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profil
 import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
 import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
+import { CartService } from './cart.service';
 
 
 
@@ -39,7 +40,8 @@ import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.c
     ResumeEducationComponent,
     ResumeFooterComponent,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [CartService]
 })
 export class AppModule { }
 
