@@ -14,6 +14,7 @@ import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experienc
 import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 import { CartService } from './cart.service';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -25,6 +26,7 @@ import { CartService } from './cart.service';
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'my-resume', component: MyResumeComponent },
+      { path: 'cart', component: CartComponent },
      
     ])
   ],
@@ -39,6 +41,7 @@ import { CartService } from './cart.service';
     ResumeWorkExperienceComponent,
     ResumeEducationComponent,
     ResumeFooterComponent,
+    CartComponent,
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
