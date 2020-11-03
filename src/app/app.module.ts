@@ -14,6 +14,7 @@ import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experienc
 import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,
