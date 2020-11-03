@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -15,18 +16,21 @@ import { ResumeEducationComponent } from './my-resume/resume-education/resume-ed
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'my-resume', component: MyResumeComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent },
      
     ])
   ],
@@ -42,6 +46,7 @@ import { CartComponent } from './cart/cart.component';
     ResumeEducationComponent,
     ResumeFooterComponent,
     CartComponent,
+    ShippingComponent,
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
