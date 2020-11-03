@@ -15,6 +15,7 @@ import { ResumeEducationComponent } from './my-resume/resume-education/resume-ed
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -23,7 +24,7 @@ import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.c
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'my-resume', component: MyResumeComponent },
-
+     
     ])
   ],
   declarations: [
@@ -36,7 +37,7 @@ import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.c
     ResumeProfileComponent,
     ResumeWorkExperienceComponent,
     ResumeEducationComponent,
-    ResumeFooterComponent
+    ResumeFooterComponent,
   ],
   bootstrap: [ AppComponent ]
 })
