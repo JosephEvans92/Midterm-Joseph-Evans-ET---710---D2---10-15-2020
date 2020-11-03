@@ -7,27 +7,22 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
-import { ResumeComponent } from './resume/resume.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ResumeLeftComponent } from './resume/resume-left/resume-left.component';
-import { ResumeRightComponent } from './resume/resume-right/resume-right.component';
-import { FooterComponent } from './resume/footer/footer.component';
-import { ResumeEducationComponent } from './resume/resume-education/resume-education.component';
+import { MyResumeComponent } from './my-resume/my-resume.component';
 import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profile.component';
 import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
+import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
+import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'resume', component: ResumeComponent },
-      { path: 'left.cloumn', component:  ResumeLeftComponent },
-      { path: 'right.cloumn', component:  ResumeRightComponent },
-      { path: 'resume-education', component:  ResumeEducationComponent },
-      { path: 'footer', component:  FooterComponent },
+      { path: 'tutorial', component: ProductListComponent },
+      { path: 'tutorial/products/:productId', component: ProductDetailsComponent },
+      { path: '', component: MyResumeComponent },
+
     ])
   ],
   declarations: [
@@ -35,19 +30,16 @@ import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experienc
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    ResumeComponent,
     ProductDetailsComponent,
-    ResumeLeftComponent,
-    ResumeRightComponent,
-    FooterComponent,
-    ResumeEducationComponent,
+    MyResumeComponent,
     ResumeProfileComponent,
     ResumeWorkExperienceComponent,
+    ResumeEducationComponent,
+    ResumeFooterComponent
   ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
